@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Chat Room</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/style/main.css" />
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <div id="Room_MSG"></div>
+                </div>
+                <div class="col-12">
+                    <hr>
+                    <input id="MSG" placeholder="Enter message" class="w-100 form-control" type="text">
+                    <br>
+                    <button id="Send_MSG" class="btn btn-outline-primary">Send</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/chat.js"></script>
+
+</html>
